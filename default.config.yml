@@ -70,7 +70,10 @@ homebrew_cask_apps:
   - vagrant
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
+  - { id: 443987910, name: "1Password" }
+  - { id: 497799835, name: "Xcode" }
+  - { id: 1176895641, name: "Spark" }
 mas_email: ""
 mas_password: ""
 
@@ -83,10 +86,10 @@ composer_packages: []
 # - name: drush
 #   state: present # present/absent, default: present
 #   version: "^8.1" # default: N/A
-gem_packages: []
-# - name: bundler
-#   state: present # present/absent/latest, default: present
-#   version: "~> 1.15.1" # default: N/A
+gem_packages:
+- name: bundler
+  state: present # present/absent/latest, default: present
+# version: "~> 1.15.1" # default: N/A
 npm_packages: []
 # - name: webpack
 #   state: present # present/absent/latest, default: present
